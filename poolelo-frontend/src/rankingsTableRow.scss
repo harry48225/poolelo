@@ -1,0 +1,22 @@
+@import './globalStyles.scss';
+
+.table-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: $small-spacing;
+    padding-left: $large-spacing;
+    padding-right: $large-spacing;
+    background-color: $accent-colour;
+
+    .name {
+        width: 40%;
+        text-align: left;
+    }
+
+    .elo {
+        width: 30%;
+        text-align: right;
+        font-weight: bold;
+    }
+}

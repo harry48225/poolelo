@@ -1,0 +1,10 @@
+@import "./globalStyles.scss";
+
+.App {
+  text-align: center;
+  @extend .primary-font;
+}
+
+body {
+  background-color: $background-colour;
+}
