@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/poolelo/static/css/main.87234aa3.chunk.css",
-    "main.js": "/poolelo/static/js/main.b4757f2e.chunk.js",
-    "main.js.map": "/poolelo/static/js/main.b4757f2e.chunk.js.map",
+    "main.js": "/poolelo/static/js/main.a19227e3.chunk.js",
+    "main.js.map": "/poolelo/static/js/main.a19227e3.chunk.js.map",
     "runtime-main.js": "/poolelo/static/js/runtime-main.5a4fe2d1.js",
     "runtime-main.js.map": "/poolelo/static/js/runtime-main.5a4fe2d1.js.map",
     "static/js/2.309e30c1.chunk.js": "/poolelo/static/js/2.309e30c1.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.5a4fe2d1.js",
     "static/js/2.309e30c1.chunk.js",
     "static/css/main.87234aa3.chunk.css",
-    "static/js/main.b4757f2e.chunk.js"
+    "static/js/main.a19227e3.chunk.js"
   ]
 }
