@@ -1,6 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
-import {RankingsTable, Player} from './rankingsTable';
+import {RankingsTable} from './rankingsTable';
 import './App.scss';
 
 function App() {
