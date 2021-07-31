@@ -1,0 +1,17 @@
+@import './globalStyles.scss';
+
+.player-selector {
+    margin: $large-spacing;
+    padding: $large-spacing;
+    background-color: $accent-colour;
+
+    text-align: center;
+    overflow-y: auto;
+
+    .player-option {
+        padding: $small-spacing/2;
+        &.selected {
+            background-color: $primary-colour ;
+        }
+    }
+}

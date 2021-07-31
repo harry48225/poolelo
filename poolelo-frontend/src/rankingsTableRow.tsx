@@ -1,5 +1,5 @@
 import React from 'react';
-import {Player} from './rankingsTable';
+import {Player} from './models/Player';
 import './rankingsTableRow.scss';
 
 type TableRowProps = {

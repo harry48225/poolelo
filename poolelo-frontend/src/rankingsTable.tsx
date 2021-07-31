@@ -1,12 +1,7 @@
 import React from 'react';
 import "./rankingsTable.scss";
 import { TableRow } from './rankingsTableRow';
-
-export type Player = {
-    ELO: number,
-    hasImproved?: boolean,
-    name: string
-}
+import {Player} from './models/Player';
 
 export type RankingsTableProps = {
     players: Player[];
