@@ -1,0 +1,31 @@
+@import './globalStyles.scss';
+
+.record-form {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: calc(100vh - #{$navbar-height});
+
+    .player-selector-wrapper {
+        flex-grow: 1;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        overflow-y: auto;
+    }
+
+    .divider {
+        text-align: center;
+        margin: $small-spacing;
+        padding: $small-spacing;
+        background-color: $primary-colour;
+    }
+    
+    
+    .submit-button {
+        background-color: green;
+    }
+
+}
