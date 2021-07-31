@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Player } from './models/Player';
 import { PlayerSelector } from './PlayerSelector';
 import "./RecordForm.scss";
@@ -53,17 +53,20 @@ const testPlayers = [
 ]
 
 export const RecordForm = () => {
-    const [winnerPlayerId, setWinnerPlayerId] = useState<number | undefined>(undefined);
-    const [loserPlayerId, setLoserPlayerId] = useState<number | undefined>(undefined);
+    const [winnerPlayerId, setWinnerPlayerId] = useState<number | undefined | "NEW">(undefined);
+    const [winnerNewPlayerName, setWinnerNewPlayerName] = useState("");
+
+    const [loserPlayerId, setLoserPlayerId] = useState<number | undefined  | "NEW">(undefined);
+    const [loserNewPlayerName, setLoserNewPlayerName] = useState("");
 
     return (
         <div className="record-form">
             <div className="player-selector-wrapper">
-                <PlayerSelector players={testPlayers} callback={(id) => {setWinnerPlayerId(id)}} selectedPlayerId={winnerPlayerId}/>
+                <PlayerSelector players={testPlayers} callback={(id) => {if (id === "NEW" || id != loserPlayerId) {setWinnerPlayerId(id)}}} selectedPlayerId={winnerPlayerId} setNewPlayerName={setWinnerNewPlayerName} newPlayerName={winnerNewPlayerName}/>
             </div>
             <div className="divider">BEAT</div>
             <div className="player-selector-wrapper">
-                <PlayerSelector players={testPlayers} callback={(id) => {setLoserPlayerId(id)}} selectedPlayerId={loserPlayerId}/>
+                <PlayerSelector players={testPlayers} callback={(id) => {if (id === "NEW" || id != winnerPlayerId) {setLoserPlayerId(id)}}} selectedPlayerId={loserPlayerId} setNewPlayerName={setLoserNewPlayerName} newPlayerName={loserNewPlayerName}/>
             </div>
             <button className="divider submit-button">Record</button>
         </div>

@@ -12,6 +12,18 @@
         padding: $small-spacing/2;
         &.selected {
             background-color: $primary-colour ;
+
+            input {
+                background-color: $primary-colour;
+                border-color: $primary-colour;
+            }
+        }
+
+        input {
+            @extend .primary-font;
+            text-align: center;
+            background-color: $accent-colour;
+            width: 98%;
         }
     }
 }
