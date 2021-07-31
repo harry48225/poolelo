@@ -13,3 +13,9 @@ $primary-colour: steelblue;
     font-family: 'Cutive Mono', monospace;
     font-size: x-large;
 }
+
+button {
+    @extend .primary-font;
+    border: none;
+    font-weight: bolder;
+}
