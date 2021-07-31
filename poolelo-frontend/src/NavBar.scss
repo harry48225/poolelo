@@ -1,0 +1,21 @@
+@import './globalStyles.scss';
+
+.nav-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background-color: $primary-colour;
+
+    button {
+        @extend .primary-font;
+        font-weight: bolder;
+        font-size: x-large;
+
+        flex-grow: 1;
+        
+        border: none;
+        background-color: $accent-colour;
+        padding: $small-spacing;
+    }
+}
