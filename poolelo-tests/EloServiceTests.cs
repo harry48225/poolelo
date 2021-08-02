@@ -15,9 +15,25 @@ namespace poolelo_tests
         public void ExpectedScore_IsCorrect(int playerAElo, int playerBElo, double expectedScore)
         {
             Assert.Equal(expectedScore, 
-                EloService.ComputeExpectedScoreForPlayerWithOpponent(1613, 1609),
+                EloService.ComputeExpectedScoreForPlayerWithOpponent(playerAElo, playerBElo),
                 2
             );
+        }
+
+        [Theory]
+        [InlineData(1613, 2.88, 2.5, 1601)]
+        public void UpdatedElo_IsCorrect(int elo, double expectedScore, double actualScore, int expectedElo)
+        {
+            Assert.Equal(expectedElo,
+                EloService.UpdateElo(elo, expectedScore, actualScore)
+            );
+        }
+
+        [Fact]
+        public void UpdatedElo_FromOpponentEloAndScore_IsCorrect()
+        {
+            var updatedElo = EloService.UpdateEloUsingOpponentEloAndScore(1613, 1603, EloService.WIN_SCORE);
+            Assert.Equal(1629, updatedElo);
         }
     }
 }
