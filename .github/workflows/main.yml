@@ -23,18 +23,18 @@ jobs:
         node-version: 13.x
     
     - name: Install NPM packages
-      working-directory: ./poolelo-frontend
+      working-directory: ./poolelo/poolelo-frontend
       run: npm ci
     
     - name: Build project
-      working-directory: ./poolelo-frontend
+      working-directory: ./poolelo/poolelo-frontend
       run: npm run build
 
     - name: Upload production-ready build files
       uses: actions/upload-artifact@v2
       with:
         name: production-files
-        path: ./poolelo-frontend/build
+        path: ./poolelo/poolelo-frontend/build
   
   deploy:
     name: Deploy
@@ -47,10 +47,10 @@ jobs:
       uses: actions/download-artifact@v2
       with:
         name: production-files
-        path: ./poolelo-frontend/build
+        path: ./poolelo/poolelo-frontend/build
 
     - name: Deploy to gh-pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./poolelo-frontend/build
+        publish_dir: ./poolelo/poolelo-frontend/build
