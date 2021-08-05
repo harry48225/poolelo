@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/poolelo/static/css/main.2b175ed4.chunk.css",
+    "main.css": "/poolelo/static/css/main.02c1f0d2.chunk.css",
     "main.js": "/poolelo/static/js/main.866e6a27.chunk.js",
     "main.js.map": "/poolelo/static/js/main.866e6a27.chunk.js.map",
     "runtime-main.js": "/poolelo/static/js/runtime-main.e7dacc60.js",
@@ -10,13 +10,13 @@
     "static/js/3.7bae5467.chunk.js": "/poolelo/static/js/3.7bae5467.chunk.js",
     "static/js/3.7bae5467.chunk.js.map": "/poolelo/static/js/3.7bae5467.chunk.js.map",
     "index.html": "/poolelo/index.html",
-    "static/css/main.2b175ed4.chunk.css.map": "/poolelo/static/css/main.2b175ed4.chunk.css.map",
+    "static/css/main.02c1f0d2.chunk.css.map": "/poolelo/static/css/main.02c1f0d2.chunk.css.map",
     "static/js/2.6291336d.chunk.js.LICENSE.txt": "/poolelo/static/js/2.6291336d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e7dacc60.js",
     "static/js/2.6291336d.chunk.js",
-    "static/css/main.2b175ed4.chunk.css",
+    "static/css/main.02c1f0d2.chunk.css",
     "static/js/main.866e6a27.chunk.js"
   ]
 }
